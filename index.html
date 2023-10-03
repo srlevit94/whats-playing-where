@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class="py-6 w-11/12 mx-auto mt-20 py-20 px-20 bg-modal rounded-lg">
+            <div class="absolute left-0 top-0 w-48 h-40 py-6 pl-2 ">
+             <img src="./assets/logo/What_s Playing Where_2.png" class=" md:mx-auto sm:container sm:mx-auto">
+            </div>
+            <h1 class="font-montserrat text-3xl font-bold text-center mt-6">
+                What's Playing Where
+            </h1>
+            <p class=" font-montserrat text-base font-bold text-center mt-10 typing ">We have created a unique application that, in a couple of clicks, will help you find the best movies. It will also help you can find the nearest theater where the movie is playing.</p>
+           
+            </header>
+     
+
+        
+        <section> 
+          <!-- User input -->
+           <div class=" mainbox w-11/12 mx-auto mt-20 py-20 px-20 bg-modal text-dark">
+                <div class="md:container md:mx-auto">
+                    <div class="first-screen grab-location-wrapper">
+                      <form action="" class="grab-location-form">
+                        <legend class="grab-location-heading text-2xl font-montserrat ">Enter ZIP code to see nearby theaters</legend>
+                        <input type="text" class=" input  bg-transparent border-2 rounded-lg h-14  zip-code-inp text-dark" placeholder="Enter your Zip Code">
+                        <button type="submit" class=" h-14 rounded-lg font-montserrat w-1/2  text-xl grab-location-allow-btn">Submit</button>
+                      </form>
+                    </div>
+                
+                    <div class="zipcodes-container">
+                      <ul class="searched-zipcodes-list">
+                
+                      </ul>
+                    </div>
+                    <!-- displays cinemasNearby -->
+                    <div class="second-screen nearby-theaters-wrapper d-none overflow-auto ">
+                        <h3 class="nearby-theaters-heading text-2xl font-montserrat">Nearby Theaters</h3>
+                        <table class="nearby-theaters-table md:container md:mx-auto sm:container sm:mx-auto table-fixed">
+                          <thead class="nearby-theaters-thead">
+                            <tr class="nearby-theaters-tr">
+                              <th class="nearby-theaters-th text-lg">Serial</th>
+                              <th class="nearby-theaters-th text-lg">Details</th>
+                              <th class="nearby-theaters-th text-lg">Shows</th>
+                              <th class="nearby-theaters-th text-lg">Location</th>
+                            </tr>
+                          </thead>
+                          <tbody class="nearby-theaters-tbody">
+                            <!-- -->
+                          </tbody>
+                        </table>
+                      </div>
+                      <!-- displays cinemaShowtimes -->
+                      <div class="third-screen shows-wrapper d-none overflow-auto">
+                        <div class="shows-wrapper-inner">
+                          <h3 class="shows-heading text-2xl font-montserrat">Showtimes</h3>
+                          <table class="shows-table md:container md:mx-auto sm:container sm:mx-auto table-fixed">
+                            <thead class="shows-thead">
+                              <tr class="shows-tr">
+                                <th class="shows-th text-lg">Serial</th>
+                                <th class="shows-th text-lg">Film Name</th>
+                                <th class="shows-th text-lg">Showtimes</th>
+                              </tr>
+                            </thead>
+                            <tbody class="shows-tbody">
+                              <!-- -->
+                            </tbody>
+                          </table>
+                          <button class="h-14 rounded-lg font-montserrat w-1/2  text-xl go-back-btn">Go Back</button>
+                        </div>
+                      </div>
+                      <!-- displays the Google Map -->
+                      <div class="forth-screen theater-map-wrapper d-none overflow-auto">
+                        <div class="theater-map-wrapper-inner">
+                          <div class="theater-map max-w-md"></div>
+                          <button class="h-14 rounded-lg font-montserrat w-1/2  text-xl go-back-btn">Go Back</button>
+                        </div>
+                      </div>
+                   
+            </div>
+        </section>
+        <!-- searching -->
+
+        <!-- footer -->
+        <footer class=" mt-32 pb-5">
+            <div class="grid grid-colms-3 gap-4 place-items-center py-2">
+                <img src="./assets/logo/What_s Playing Where_2.png">
+               </div>
+            <h1 class="font-montserrat text-2xl font-bold text-center color">
+                Project was made by</h1>
+             <p class="text-center text-xl"> Juan <a href="https://github.com/sjuan634" class="fa-brands fa-github  fa-beat"></a></p> 
+             <p class="text-center text-xl"> Lee <a href="https://github.com/leemyers16" class="fa-brands fa-github fa-beat"></a></p> 
+             <p class="text-center text-xl"> Maria <a href="https://github.com/Mary90272" class="fa-brands fa-github fa-beat"></a></p> 
+             <p class="text-center text-xl"> Shane <a href="https://github.com/srlevit94" class="fa-brands fa-github fa-beat"></a></p>
+             <p class="text-center text-base"> Follow us by Github </p>
+                <!---->
+            
+        </footer>
+    </body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZE_0EeyXAtdrxa2yP_JKYdyhI4LQqci8&v=weekly" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</html>
+
