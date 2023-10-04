@@ -1,37 +1,70 @@
-# What's Playing Where?
-This is an application for movie-goers who want to know what's playing at movie theaters near them. Instead of individually looking at theater websites to see their showtimes, this application centralizes the showtime information for multiple theaters in place, based on the user's zip code.
+# Getting Started with Create React App
 
-## User Story
-- AS AN avid movie-goer
-- I WANT to see a list of theaters near me
-- SO THAT I can see what movies are playing and their showtimes for the day
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- I WANT to see the address and directions to the selected theater
-- SO THAT I can determine which theater works best for my location/schedule
+## Available Scripts
 
-## Major Features
-- WHEN I input my desired zip code
-- THEN a list of nearby theaters populates on the screen
+In the project directory, you can run:
 
-- WHEN I select a theater and a date
-- THEN I can see a list of movie showtimes for the date
+### `npm start`
 
-- WHEN I select a theater
-- THEN I can see a map of the theater's location
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- WHEN I input a Zip Code
-- THEN the Zip Code is saved into local storage and appended to a list as a hyperlink
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- WHEN call to the the Google API, MovieGlu API, and GeoCode API
-- THEN the APIs work together to make a fully functioning applcation
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Relevant Links
-- GitHub Repo: https://github.com/sjuan634/whats-playing-where
-- Deployed Application: https://sjuan634.github.io/whats-playing-where//
+### `npm run build`
 
-## Images of Deployed Application
-![web image 1](https://i.imgur.com/SN6jINJ.jpg)
-![web image 2](https://i.imgur.com/qKPRfmE.jpg)
-![web image 3](https://i.imgur.com/76yCZBv.jpg)
-![web image 4](https://i.imgur.com/BpL3HGy.jpg)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
